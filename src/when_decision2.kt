@@ -49,13 +49,13 @@ fun main(){
         Promotional Eligibility:${promotionalOffer}
         
         -----------------------------------
-        Subtotal: ${subTotal}
+        Subtotal: %.2f
         Discount amount: ${discountAmount}
-        Discount Percentage: ${discount * 100}%
+        Discount Percentage: ${discount * 100}
         Final Total: ${finalTotal}
         
         ==========================================
         
         
-    """.trimIndent())
+    """.trimIndent().format(subTotal))
 }
