@@ -62,6 +62,7 @@ fun main(){
         -----------------------------------------
         Average Grade: $avg
         Grade: $grade
+        Marks: ${marks.contentToString()}
         
         -----------------------------------------
         Comments: $academicStatus
