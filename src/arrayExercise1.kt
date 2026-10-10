@@ -12,7 +12,7 @@ fun main(){
     println(marks.last())
     println("Number of marks: ${marks.size}")
     marks[2]=99
-    println(marks[2])
+    println(marks[2]) 
 
     //part 3
     val avg: Double =marks.average()
