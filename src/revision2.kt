@@ -1,4 +1,7 @@
 fun main(){
     var shoppingItems=arrayOf("Tissue","Food")
-    println(shoppingItems[0])
+
+    println(shoppingItems.size)
+    println(shoppingItems.first())
+    println(shoppingItems.last())
 }
