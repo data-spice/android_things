@@ -1,7 +1,4 @@
 fun main(){
-    var grade=30
-    val decimal= grade.toDouble()
-
-    println(grade)
-    println(decimal)
+    var shoppingItems=arrayOf("Tissue","Food")
+    println(shoppingItems[0])
 }
