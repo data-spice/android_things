@@ -49,7 +49,7 @@ fun foo (bar: () -> Unit){
     bar()
 }
 
-fun calculate(
+private fun calculate(
     a:Int,
     b:Int,
     operation:(Int,Int) ->Int
@@ -62,3 +62,9 @@ fun calculate(
 fun add(a:Int,b:Int): Int{
     return (a+b)
 }
+
+/*
+Note: For Single Expression Functions the function body can be expressed after = sign after omitting the {}
+ */
+
+fun double(n:Int): Int=n*2
