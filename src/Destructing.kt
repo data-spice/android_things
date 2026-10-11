@@ -6,7 +6,7 @@ fun main() {
     println(name)
     println(age)
 
-    //Destructing using to
+    //Destructing of maps(key value pairs) that use to
 
     val product= "Soap" to 10
     val item= product.first
