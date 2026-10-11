@@ -11,6 +11,9 @@ fun main(){
 
     calculate(2,3,  ::add)
 
+    val (v1,v2)=twoValues()
+    println("$v1 , $v2 ")
+
 }
 
 /*
@@ -68,3 +71,15 @@ Note: For Single Expression Functions the function body can be expressed after =
  */
 
 fun double(n:Int): Int=n*2
+
+
+// If you want to return more than one associated datatypes
+
+
+fun twoValues(): Pair<String ,Int> ="Victor" to 28
+
+
+
+fun threeValues(): Triple<String,Int,Char>{
+    return Triple("Victor",23,'A')
+}
