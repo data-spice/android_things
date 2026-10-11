@@ -16,7 +16,8 @@ fun main (){
     val shopping = mutableListOf("Soap","Sugar")
 
     shopping.add("Tea")
-    shopping.removeAll(listOf("Sugar","Tea"))
+    shopping.removeAll(listOf("Sugar","Tea","juice"))
+
     println(shopping)
 
 }
