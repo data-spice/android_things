@@ -5,7 +5,7 @@
 // starships were ment to fly
 
 
-data class Student(
+data class Students(
     val name: String,
     val age: Int,
     val course: String
@@ -15,8 +15,8 @@ data class Student(
 
 fun main(){
 
-    val student1=Student("Victor",34,"Android Development and AI")
-    val student2=Student("Mwaniki",34,"Information Technology")
+    val student1=Students("Victor",34,"Android Development and AI")
+    val student2=Students("Mwaniki",34,"Information Technology")
 
     println(student1)
     println(student2)
