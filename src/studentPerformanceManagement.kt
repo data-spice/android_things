@@ -18,7 +18,7 @@ class Student(
 ){
     var marks: Double = marks
         set(value){
-            // Incase the marks are changed
+            // incase the marks are changed
             require(value in 0.0..100.0){
                 "Marks must be in the range of 0 to 100"
             }
