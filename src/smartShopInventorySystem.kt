@@ -135,9 +135,53 @@ fun main() {
 
 
     /*
-                -- THE SAFE OPERATOR --
-      --
+         ===============================================================================================================
+
+                              ---      PROBLEM STATEMENT    ---
+
+         -- Suppose that a student has an optional middle name and :
+                        middleName =Kamau  // Valid
+                        middleName =null   //Also valid
+
+         -- Now suppose that you want to print the middle name :
+                        print(middleName.length)
+         -- Kotlin will error because the middleName might be null, there is no string whose length can be calculated.
+                This is where operators help;
+
+        ===============================================================================================================
+
+                                 1) THE SAFE OPERATOR (?.) --
+      -- The safe call operator lets you access a property if and only if the value is not null
+                        variable?.property
+                        middleName?.length //If null the output is null instead of crushing else it does the operation
+
+        ===============================================================================================================
+
+
+                                 2)  THE ELVIS OPERATOR (?:)
+      -- The elvis operator allows you to provide a default value when an expression is null
+                            variable?: defaultValue
+                           ie middleName ?: "No middleName"
+
+        ===============================================================================================================
+
+                                3)  USING THEM TOGETHER
+        -- You can use the operators together and achieve desired functionality:
+                    Suppose you want to print the middleName length but display 0 when the name is missing
+                            var length= middleName?.length?: 0
+
+        ===============================================================================================================
+                                4) NON NULL ASSERTION OPERATOR
+        -- The non null operator tells kotlin that 'I am sure that this variable is not a null variable so let me use
+           it like a non null variable.
+                        middleName!!.length
+
+        -- If the variable is indeed a null variable Kotlin will throw a NullPointerException at runtime
+
      */
+
+
+
 
 }
 
